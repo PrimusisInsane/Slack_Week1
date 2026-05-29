@@ -1,4 +1,4 @@
-from db import total, average
+from model import total, average
 
 def run():
     print("=== Marks Calculator ===")
@@ -8,7 +8,7 @@ def run():
     n = int(input("How many subjects? "))
 
     for i in range(n):
-        mark = int(input(f"Enter mark {i+1}: "))
+        mark = int(input(f"Enter mark {i+1}: "))   #Repeat until the number of subject is completed
         marks.append(mark)
 
     print("\n--- Result ---")
